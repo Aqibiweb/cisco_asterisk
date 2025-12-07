@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DIALTEMPLATE>
+  <TEMPLATE MATCH="911" Timeout="0"/>
+  <TEMPLATE MATCH="[1-9]xxx" Timeout="3"/>
+  <TEMPLATE MATCH="*xx" Timeout="3"/>
+  <TEMPLATE MATCH="0.........." Timeout="5"/>
+  <TEMPLATE MATCH="*" Timeout="10"/>
+</DIALTEMPLATE>

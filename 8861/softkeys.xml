@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+softkeys.xml
+Softkey Configuration for Cisco SIP IP Phones
+Defines softkey layout for different call states
+-->
+<softKeyTemplate>
+  
+  <!-- Softkey Definitions -->
+  <softKeyDef>
+    <!-- Basic Call Control -->
+    <softKey keyID="NewCall">
+      <labelName>NewCall</labelName>
+    </softKey>
+    
+    <softKey keyID="Redial">
+      <labelName>Redial</labelName>
+    </softKey>
+    
+    <softKey keyID="Hold">
+      <labelName>Hold</labelName>
+    </softKey>
+    
+    <softKey keyID="Resume">
+      <labelName>Resume</labelName>
+    </softKey>
+    
+    <softKey keyID="EndCall">
+      <labelName>EndCall</labelName>
+    </softKey>
+    
+    <softKey keyID="Answer">
+      <labelName>Answer</labelName>
+    </softKey>
+    
+    <!-- Transfer Functions -->
+    <softKey keyID="Trnsfer">
+      <labelName>Trnsfer</labelName>
+    </softKey>
+    
+    <softKey keyID="DirTrfr">
+      <labelName>DirTrfr</labelName>
+    </softKey>
+    
+    <!-- Conference Functions -->
+    <softKey keyID="Confrn">
+      <labelName>Confrn</labelName>
+    </softKey>
+    
+    <softKey keyID="ConfList">
+      <labelName>ConfList</labelName>
+    </softKey>
+    
+    <softKey keyID="Join">
+      <labelName>Join</labelName>
+    </softKey>
+    
+    <!-- Call Park -->
+    <softKey keyID="Park">
+      <labelName>Park</labelName>
+    </softKey>
+    
+    <!-- Call Forward -->
+    <softKey keyID="CFwdAll">
+      <labelName>CFwdAll</labelName>
+    </softKey>
+    
+    <!-- Do Not Disturb -->
+    <softKey keyID="DoNotDisturb">
+      <labelName>DND</labelName>
+    </softKey>
+    
+    <!-- Call Pickup -->
+    <softKey keyID="Pickup">
+      <labelName>Pickup</labelName>
+    </softKey>
+    
+    <softKey keyID="GPickUp">
+      <labelName>GPickUp</labelName>
+    </softKey>
+    
+    <!-- Directory and Messages -->
+    <softKey keyID="Directories">
+      <labelName>Dirs</labelName>
+    </softKey>
+    
+    <softKey keyID="MissedCalls">
+      <labelName>Missed</labelName>
+    </softKey>
+    
+    <softKey keyID="CallLog">
+      <labelName>CallLog</labelName>
+    </softKey>
+    
+    <!-- Additional Features -->
+    <softKey keyID="Barge">
+      <labelName>Barge</labelName>
+    </softKey>
+    
+    <softKey keyID="iDivert">
+      <labelName>iDivert</labelName>
+    </softKey>
+    
+    <softKey keyID="Remove">
+      <labelName>Remove</labelName>
+    </softKey>
+    
+    <softKey keyID="Select">
+      <labelName>Select</labelName>
+    </softKey>
+    
+    <softKey keyID="Back">
+      <labelName>&lt;&lt;</labelName>
+    </softKey>
+    
+    <softKey keyID="Exit">
+      <labelName>Exit</labelName>
+    </softKey>
+    
+    <softKey keyID="Update">
+      <labelName>Update</labelName>
+    </softKey>
+    
+  </softKeyDef>
+
+  <!-- Softkey Sets for Different Call States -->
+  
+  <!-- On Hook (Idle State) -->
+  <softKeySet>
+    <softKeySetName>onHook</softKeySetName>
+    <softKey position="1" keyID="Redial"/>
+    <softKey position="2" keyID="NewCall"/>
+    <softKey position="3" keyID="CFwdAll"/>
+    <softKey position="4" keyID="Directories"/>
+    <softKey position="5" keyID="CallLog"/>
+    <softKey position="6" keyID="DoNotDisturb"/>
+    <softKey position="7" keyID="MissedCalls"/>
+    <softKey position="8" keyID="Pickup"/>
+  </softKeySet>
+
+  <!-- Off Hook (Before Dialing) -->
+  <softKeySet>
+    <softKeySetName>offHook</softKeySetName>
+    <softKey position="1" keyID="Redial"/>
+    <softKey position="2" keyID="EndCall"/>
+    <softKey position="3" keyID="Directories"/>
+    <softKey position="4" keyID="CallLog"/>
+  </softKeySet>
+
+  <!-- Digits After First (While Dialing) -->
+  <softKeySet>
+    <softKeySetName>digitsAfterFirst</softKeySetName>
+    <softKey position="1" keyID="Back"/>
+    <softKey position="2" keyID="EndCall"/>
+  </softKeySet>
+
+  <!-- Connected (Active Call) -->
+  <softKeySet>
+    <softKeySetName>connected</softKeySetName>
+    <softKey position="1" keyID="Hold"/>
+    <softKey position="2" keyID="EndCall"/>
+    <softKey position="3" keyID="Trnsfer"/>
+    <softKey position="4" keyID="Confrn"/>
+    <softKey position="5" keyID="Park"/>
+    <softKey position="6" keyID="iDivert"/>
+    <softKey position="7" keyID="NewCall"/>
+  </softKeySet>
+
+  <!-- On Hold -->
+  <softKeySet>
+    <softKeySetName>onHold</softKeySetName>
+    <softKey position="1" keyID="Resume"/>
+    <softKey position="2" keyID="EndCall"/>
+    <softKey position="3" keyID="NewCall"/>
+    <softKey position="4" keyID="Trnsfer"/>
+  </softKeySet>
+
+  <!-- Ringing In (Incoming Call) -->
+  <softKeySet>
+    <softKeySetName>ringIn</softKeySetName>
+    <softKey position="1" keyID="Answer"/>
+    <softKey position="2" keyID="iDivert"/>
+    <softKey position="3" keyID="EndCall"/>
+  </softKeySet>
+
+  <!-- Ringing Out (Outgoing Call Ringing) -->
+  <softKeySet>
+    <softKeySetName>ringOut</softKeySetName>
+    <softKey position="1" keyID="EndCall"/>
+  </softKeySet>
+
+  <!-- Connected Transfer (During Transfer) -->
+  <softKeySet>
+    <softKeySetName>connectedTransfer</softKeySetName>
+    <softKey position="1" keyID="Hold"/>
+    <softKey position="2" keyID="EndCall"/>
+    <softKey position="3" keyID="Trnsfer"/>
+    <softKey position="4" keyID="DirTrfr"/>
+    <softKey position="5" keyID="NewCall"/>
+  </softKeySet>
+
+  <!-- Ring In Transfer (Transfer target ringing) -->
+  <softKeySet>
+    <softKeySetName>ringInTransfer</softKeySetName>
+    <softKey position="1" keyID="EndCall"/>
+    <softKey position="2" keyID="Trnsfer"/>
+  </softKeySet>
+
+  <!-- Connected Conference (During Conference) -->
+  <softKeySet>
+    <softKeySetName>connectedConference</softKeySetName>
+    <softKey position="1" keyID="Hold"/>
+    <softKey position="2" keyID="EndCall"/>
+    <softKey position="3" keyID="Confrn"/>
+    <softKey position="4" keyID="ConfList"/>
+    <softKey position="5" keyID="NewCall"/>
+  </softKeySet>
+
+  <!-- Ring In Conference (Conference participant ringing) -->
+  <softKeySet>
+    <softKeySetName>ringInConference</softKeySetName>
+    <softKey position="1" keyID="EndCall"/>
+    <softKey position="2" keyID="Confrn"/>
+  </softKeySet>
+
+  <!-- Conference List (Managing Conference Participants) -->
+  <softKeySet>
+    <softKeySetName>conferenceList</softKeySetName>
+    <softKey position="1" keyID="Remove"/>
+    <softKey position="2" keyID="Back"/>
+    <softKey position="3" keyID="Update"/>
+  </softKeySet>
+
+  <!-- Call Forward All -->
+  <softKeySet>
+    <softKeySetName>callForwardAll</softKeySetName>
+    <softKey position="1" keyID="Back"/>
+    <softKey position="2" keyID="EndCall"/>
+  </softKeySet>
+
+  <!-- Directory -->
+  <softKeySet>
+    <softKeySetName>directory</softKeySetName>
+    <softKey position="1" keyID="Select"/>
+    <softKey position="2" keyID="Exit"/>
+  </softKeySet>
+
+  <!-- Call Log -->
+  <softKeySet>
+    <softKeySetName>callLog</softKeySetName>
+    <softKey position="1" keyID="Select"/>
+    <softKey position="2" keyID="Exit"/>
+  </softKeySet>
+
+  <!-- Missed Calls -->
+  <softKeySet>
+    <softKeySetName>missedCalls</softKeySetName>
+    <softKey position="1" keyID="Select"/>
+    <softKey position="2" keyID="Exit"/>
+  </softKeySet>
+
+</softKeyTemplate>

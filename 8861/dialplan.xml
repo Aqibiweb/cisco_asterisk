@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+dialplan.xml
+Dial Plan Configuration for Cisco SIP IP Phones
+This file controls digit collection and automatic dialing behavior
+-->
+<DIALTEMPLATE>
+  
+  <!-- Emergency Numbers - Dial Immediately -->
+  <TEMPLATE MATCH="911" Timeout="0" User="Phone"/>
+  <TEMPLATE MATCH="112" Timeout="0" User="Phone"/>
+  <TEMPLATE MATCH="999" Timeout="0" User="Phone"/>
+  
+  <!-- Local Emergency (Saudi Arabia) -->
+  <TEMPLATE MATCH="997" Timeout="0" User="Phone"/>  <!-- Police -->
+  <TEMPLATE MATCH="998" Timeout="0" User="Phone"/>  <!-- Ambulance -->
+  
+  <!-- Internal Extensions (3-4 digits) -->
+  <!-- Adjust these patterns based on your extension numbering plan -->
+  <TEMPLATE MATCH="1..." Timeout="0" User="Phone"/>  <!-- Extensions 1000-1999 -->
+  <TEMPLATE MATCH="2..." Timeout="0" User="Phone"/>  <!-- Extensions 2000-2999 -->
+  <TEMPLATE MATCH="3..." Timeout="0" User="Phone"/>  <!-- Extensions 3000-3999 -->
+  <TEMPLATE MATCH="4..." Timeout="0" User="Phone"/>  <!-- Extensions 4000-4999 -->
+  <TEMPLATE MATCH="5..." Timeout="0" User="Phone"/>  <!-- Extensions 5000-5999 -->
+  <TEMPLATE MATCH="6..." Timeout="0" User="Phone"/>  <!-- Extensions 6000-6999 -->
+  <TEMPLATE MATCH="7..." Timeout="0" User="Phone"/>  <!-- Extensions 7000-7999 -->
+  <TEMPLATE MATCH="8..." Timeout="0" User="Phone"/>  <!-- Extensions 8000-8999 -->
+  <TEMPLATE MATCH="9..." Timeout="0" User="Phone"/>  <!-- Extensions 9000-9999 -->
+  
+  <!-- 3-Digit Extensions -->
+  <TEMPLATE MATCH="1.." Timeout="0" User="Phone"/>   <!-- Extensions 100-199 -->
+  <TEMPLATE MATCH="2.." Timeout="0" User="Phone"/>   <!-- Extensions 200-299 -->
+  <TEMPLATE MATCH="3.." Timeout="0" User="Phone"/>   <!-- Extensions 300-399 -->
+  <TEMPLATE MATCH="4.." Timeout="0" User="Phone"/>   <!-- Extensions 400-499 -->
+  <TEMPLATE MATCH="5.." Timeout="0" User="Phone"/>   <!-- Extensions 500-599 -->
+  <TEMPLATE MATCH="6.." Timeout="0" User="Phone"/>   <!-- Extensions 600-699 -->
+  <TEMPLATE MATCH="7.." Timeout="0" User="Phone"/>   <!-- Extensions 700-799 -->
+  <TEMPLATE MATCH="8.." Timeout="0" User="Phone"/>   <!-- Extensions 800-899 -->
+  <TEMPLATE MATCH="9.." Timeout="0" User="Phone"/>   <!-- Extensions 900-999 -->
+  
+  <!-- Star Codes (Feature Access Codes) -->
+  <TEMPLATE MATCH="*97" Timeout="0" User="Phone"/>   <!-- Voicemail -->
+  <TEMPLATE MATCH="*98" Timeout="0" User="Phone"/>   <!-- Voicemail Alternative -->
+  <TEMPLATE MATCH="*43" Timeout="0" User="Phone"/>   <!-- Echo Test -->
+  <TEMPLATE MATCH="*65" Timeout="0" User="Phone"/>   <!-- Call Forward -->
+  <TEMPLATE MATCH="*67" Timeout="0" User="Phone"/>   <!-- Call Blocking -->
+  <TEMPLATE MATCH="*69" Timeout="0" User="Phone"/>   <!-- Call Return -->
+  <TEMPLATE MATCH="*70" Timeout="0" User="Phone"/>   <!-- Call Park -->
+  <TEMPLATE MATCH="*71" Timeout="0" User="Phone"/>   <!-- Call Pickup -->
+  <TEMPLATE MATCH="*72" Timeout="0" User="Phone"/>   <!-- Call Forward Activate -->
+  <TEMPLATE MATCH="*73" Timeout="0" User="Phone"/>   <!-- Call Forward Deactivate -->
+  <TEMPLATE MATCH="*78" Timeout="0" User="Phone"/>   <!-- DND Activate -->
+  <TEMPLATE MATCH="*79" Timeout="0" User="Phone"/>   <!-- DND Deactivate -->
+  <TEMPLATE MATCH="*80" Timeout="0" User="Phone"/>   <!-- Call Park Retrieve -->
+  
+  <!-- Conference Rooms -->
+  <TEMPLATE MATCH="**..." Timeout="0" User="Phone"/>  <!-- Conference codes **XXX -->
+  
+  <!-- Saudi Arabia National Numbers -->
+  <!-- Mobile Numbers (05XXXXXXXX - 10 digits) -->
+  <TEMPLATE MATCH="05........" Timeout="0" User="Phone"/>
+  
+  <!-- Landline Numbers (01XXXXXXX - 9 digits) -->
+  <TEMPLATE MATCH="01......." Timeout="0" User="Phone"/>
+  <TEMPLATE MATCH="02......." Timeout="0" User="Phone"/>
+  <TEMPLATE MATCH="03......." Timeout="0" User="Phone"/>
+  <TEMPLATE MATCH="04......." Timeout="0" User="Phone"/>
+  <TEMPLATE MATCH="06......." Timeout="0" User="Phone"/>
+  <TEMPLATE MATCH="07......." Timeout="0" User="Phone"/>
+  
+  <!-- International Calls (00 prefix) -->
+  <TEMPLATE MATCH="00*" Timeout="5" User="Phone"/>
+  
+  <!-- International Calls (+ prefix) -->
+  <TEMPLATE MATCH="+*" Timeout="5" User="Phone"/>
+  
+  <!-- Toll-Free Numbers (800) -->
+  <TEMPLATE MATCH="800......" Timeout="0" User="Phone"/>
+  
+  <!-- Default Rule - Wait 5 seconds after last digit -->
+  <!-- This catches any pattern not matched above -->
+  <TEMPLATE MATCH="*" Timeout="5" User="Phone"/>
+  
+</DIALTEMPLATE>

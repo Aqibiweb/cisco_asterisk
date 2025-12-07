@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device>
+<devicePool>
+<dateTimeSetting>
+<dateTemplate>D/M/YY</dateTemplate>
+<timeZone>Arabian Standard Time</timeZone>
+<ntps>
+<ntp>
+<n>pool.ntp.org</n>
+<ntpMode>Unicast</ntpMode>
+</ntp>
+</ntps>
+</dateTimeSetting>
+<callManagerGroup>
+<members>
+<member priority="0">
+<callManager>
+<ports>
+<ethernetPhonePort>2000</ethernetPhonePort>
+<sipPort>5060</sipPort>
+</ports>
+<processNodeName>46.246.120.151</processNodeName>
+</callManager>
+</member>
+</members>
+</callManagerGroup>
+</devicePool>
+<loadInformation model="Cisco 8861">sip88xx.11-7-1-17</loadInformation>
+<commonProfile>
+<callLogBlfEnabled>2</callLogBlfEnabled>
+</commonProfile>
+</device>
