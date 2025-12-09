@@ -1,0 +1,37 @@
+
+Pending tasks:
+
+IPT Feature
+8800 series (8861)
+1- Add new call during call (not working)
+
+IPT Feature
+7800 series (7821 , 7841)
+1- Add new call during call (not working)
+2- Call decline (not working)(process)
+
+
+CISCO IP Phones Main Task list
+------------------------------------------------------
+
+IPT Feature
+8800 series (8861)
+1- Making call (working) 
+2- call tranfer (working)
+3- confrance call (need to configure form server side)
+4- forword call (need to configure form server side)
+5- Missed call (working)
+6- On hold (working) 
+7- add new call during call (not working)
+8- call decline (working)
+
+IPT Feature
+7800 series (7821 , 7841)
+1- Making call (working) 
+2- call tranfer (working) 
+3- confrance call (need to configure form server side)
+4- forword call (need to configure form server side)
+5- Missed call (working)
+6- On hold (working) 
+7- add new call during call (not working)
+8- call decline (not working )

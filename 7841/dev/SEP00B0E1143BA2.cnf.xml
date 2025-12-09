@@ -102,7 +102,7 @@
 <autoAnswer>
 <autoAnswerEnabled>2</autoAnswerEnabled>
 </autoAnswer>
-<callWaiting>3</callWaiting>
+<callWaiting>1</callWaiting>
 <authName>4130</authName>
 <authPassword>4130</authPassword>
 <sharedLine>false</sharedLine>
@@ -141,7 +141,8 @@
 <voiceVlanAccess>0</voiceVlanAccess>
 <videoCapability>0</videoCapability>
 <autoSelectLineEnable>0</autoSelectLineEnable>
-<webAccess>1</webAccess>
+<webAccess>0</webAccess>
+<webProtocol>0</webProtocol>
 <spanToPCPort>1</spanToPCPort>
 <loggingDisplay>1</loggingDisplay>
 <loadServer/>
