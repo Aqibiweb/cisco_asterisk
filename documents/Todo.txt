@@ -3,11 +3,11 @@ Pending tasks:
 
 IPT Feature
 8800 series (8861)
-1- Add new call during call (not working)
+1- Add new call during call (Done)
 
 IPT Feature
 7800 series (7821 , 7841)
-1- Add new call during call (not working)
+1- Add new call during call (Done)
 2- Call decline (not working)(process)
 
 
@@ -18,20 +18,20 @@ IPT Feature
 8800 series (8861)
 1- Making call (working) 
 2- call tranfer (working)
-3- confrance call (need to configure form server side)
-4- forword call (need to configure form server side)
+3- confrance call(admin configured)(not working)
+4- forword call (admin configured)(not working)
 5- Missed call (working)
 6- On hold (working) 
-7- add new call during call (not working)
+7- add new call during call (working)
 8- call decline (working)
 
 IPT Feature
 7800 series (7821 , 7841)
 1- Making call (working) 
 2- call tranfer (working) 
-3- confrance call (need to configure form server side)
-4- forword call (need to configure form server side)
+3- confrance call (admin configured)(not working)
+4- forword call (admin configured)(not working)
 5- Missed call (working)
 6- On hold (working) 
-7- add new call during call (not working)
+7- add new call during call (working)
 8- call decline (not working )
